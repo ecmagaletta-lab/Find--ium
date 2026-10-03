@@ -2,6 +2,7 @@
 chosen_text = "test.txt"
 latin_source = open(chosen_text)
 latin_content = latin_source.read()
-print(latin_content)
+latin_strings = latin_content.split()
+print(latin_strings)
 
 
