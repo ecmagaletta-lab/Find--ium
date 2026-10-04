@@ -10,7 +10,8 @@ for vocabulum in latin_strings:
     if clean_vocab.endswith("ium"):
         unique_words.add(clean_vocab)
 
-for word in unique_words:
+words_alpha = sorted(unique_words)
+for word in words_alpha:
     print(word)
 
 
