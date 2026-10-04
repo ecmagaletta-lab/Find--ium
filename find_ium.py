@@ -5,7 +5,8 @@ latin_content = latin_source.read()
 latin_strings = latin_content.split()
 for vocabulum in latin_strings:
     clean_vocab = vocabulum.rstrip('.,;:!?"')
-    print(clean_vocab)
+    if clean_vocab.endswith("ium"):
+        print(clean_vocab)
 
 
 
