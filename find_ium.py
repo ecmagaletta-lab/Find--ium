@@ -13,8 +13,8 @@ else:
     for vocabulum in latin_strings:
         clean_vocab = vocabulum.rstrip('.,;:!?"')
         clean_vocab = clean_vocab.lower()
-    if clean_vocab.endswith("ium"):
-        unique_words.add(clean_vocab)
+        if clean_vocab.endswith("ium"):
+            unique_words.add(clean_vocab)
 
     words_alpha = sorted(unique_words)
     for word in words_alpha:
