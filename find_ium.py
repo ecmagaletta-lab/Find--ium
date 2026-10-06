@@ -6,7 +6,6 @@ while not latin_source:
     chosen_text = input("Enter the name or path of a Latin .txt file to analyze: ")
     #Open and read the text, with exception handling.
     try:
-
         latin_source = open(chosen_text)
         
     except FileNotFoundError:
@@ -30,8 +29,3 @@ while not latin_source:
     finally:
         if latin_source:
             latin_source.close()
-
-
-
-
-
